@@ -1,14 +1,14 @@
 <div class="body1">
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="description">
+    <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
+        <div class="description mb-4 mb-lg-0">
             <h2 class="font-wt">ShopFlow</h2>
-            <p style="max-width: 500px;">ShopFlow tracks sales, daily revenue, and customer histories for easy retail management.</p>
+            <p>ShopFlow tracks sales, daily revenue, and customer histories for easy retail management.</p>
         </div>
-        <div class="card justify-content-center mx-auto shadow col-lg-6 col-md-6 col-sm-6 acc">
+        <div class="card justify-content-center mx-auto shadow col-lg-6 col-md-8 col-sm-10 acc">
             <h2 class="card-header font text-center">Login</h2>
             <div class="card-body">
                 <form (ngSubmit)="loginOwner()">
-                    <input type="text" class="form-control mx-auto" id="email1" name="email1" placeholder="Email" [(ngModel)]="owner1.email" >
+                    <input type="text" class="form-control mx-auto" id="email1" name="email1" placeholder="Email" [(ngModel)]="owner1.email">
                     <input type="password" class="form-control mx-auto mt-2" id="pwd1" name="pwd1" placeholder="Password" [(ngModel)]="owner1.pwd">
                     <div class="justify-content-center d-flex">
                         <button class="btn btn-primary mt-2 mx-auto" type="submit">Submit</button>
