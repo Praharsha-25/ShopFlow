@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Owner } from '../owner';
 import { OwnerService } from '../owner.service';
-import { NumericType } from 'mongodb';
+// import { NumericType } from 'mongodb';
 import { Router } from '@angular/router';
 
 @Component({
