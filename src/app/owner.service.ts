@@ -7,9 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class OwnerService {
-  private baseURL="http://localhost:52035/saveuser";
-  private URL = "http://localhost:52035/getowner";
-  private dob = "http://localhost:52035/getownerdob";
+  private baseURL="https://shopflowbackend-hh9d.onrender.com/saveuser";
+  private URL = "https://shopflowbackend-hh9d.onrender.com/getowner";
+  private dob = "https://shopflowbackend-hh9d.onrender.com/getownerdob";
   constructor(private httpClient: HttpClient) { }
   createOwner(owner: Owner): Observable<Owner>{
     return this.httpClient.post<Owner>(`${this.baseURL}`, owner);
