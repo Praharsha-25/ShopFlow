@@ -7,7 +7,8 @@ import { CustomerTransactions } from './customer-transactions';
   providedIn: 'root'
 })
 export class CustomerTransactionService {
-  private baseURL="http://localhost:52035/savetransaction";
+
+  private baseURL="https://shopflowbackend-hsz6.onrender.com/savetransaction";
   private URL="http://localhost:52035/gettransactions";
   private countURL = "http://localhost:52035/countproducts";
   private revenueURL = "http://localhost:52035/totalrevenue";
