@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class StockService {
-  private url = "http://localhost:52035/";
+  private url = "https://shopflowbackend-hsz6.onrender.com/";
   constructor(private httpClient: HttpClient) { }
   saveProductStock(ps: Stock): Observable<Stock>{
     return this.httpClient.post<Stock>(`${this.url}saveproductstock`, ps);
