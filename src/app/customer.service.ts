@@ -11,8 +11,6 @@ export class CustomerService {
 
   private apiUrl = environment.apiUrl;
     private baseURL=`${this.apiUrl}/savecustomer`;
-    
-    
     private URL = `${this.apiUrl}/countcustomers`;
     private countURL = `${this.apiUrl}/counttransactions`;
   constructor(private httpClient: HttpClient) { }

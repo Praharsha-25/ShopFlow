@@ -9,14 +9,14 @@ import { CustomerTransactions } from './customer-transactions';
 export class CustomerTransactionService {
 
   private baseURL="https://shopflowbackend-hsz6.onrender.com/savetransaction";
-  private URL="http://localhost:52035/gettransactions";
-  private countURL = "http://localhost:52035/countproducts";
-  private revenueURL = "http://localhost:52035/totalrevenue";
-  private trans = "http://localhost:52035/getalltransactions";
-  private top4 = "http://localhost:52035/gettop4";
-  private total = "http://localhost:52035/total";
-  private week ="http://localhost:52035/weekrevenue";
-  private topProducts = "http://localhost:52035/gettopproductlist";
+  private URL="https://shopflowbackend-hsz6.onrender.com/gettransactions";
+  private countURL = "https://shopflowbackend-hsz6.onrender.com/countproducts";
+  private revenueURL = "https://shopflowbackend-hsz6.onrender.com/totalrevenue";
+  private trans = "https://shopflowbackend-hsz6.onrender.com/getalltransactions";
+  private top4 = "https://shopflowbackend-hsz6.onrender.com/gettop4";
+  private total = "https://shopflowbackend-hsz6.onrender.com/total";
+  private week ="https://shopflowbackend-hsz6.onrender.com/weekrevenue";
+  private topProducts = "https://shopflowbackend-hsz6.onrender.com/gettopproductlist";
   constructor(private  httpClient: HttpClient) { }
   createTransaction(transaction: CustomerTransactions): Observable<Object>{
     return this.httpClient.post(`${this.baseURL}`, transaction);
