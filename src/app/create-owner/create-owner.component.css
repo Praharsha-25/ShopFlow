@@ -85,7 +85,21 @@ p {
     background-color: #eae2b7;
     width: 450px;
 }
-
+@media(max-width: 450px) and (min-width:350px){
+    .modal-content{
+        width: 300px;
+    }
+}
+@media(max-width: 351px) and(min-width:321px){
+    .modal-content{
+        width: 250px;
+    }
+}
+@media (max-width: 320px){
+    .modal-content{
+        width: 260px;
+    }
+}
 .modal-header {
     padding-bottom: 0%;
 }
